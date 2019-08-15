@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- By Anaël Akouété-Akue
+	 For SOEN 287-assignment 1 -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Assignment 1 - Question 3</title>
+</head>
+
+<body>
+	<h1>Anaël Akouété-Akue's Search Form</h1>
+	<form action="">
+		<fieldset>
+			<legend>Renter's Information</legend>
+			<label>How many people will live in the apartment?</label>
+			<input type="number" name="people" min="1"><br>
+			<br>
+			<label>Smoker?</label>
+			<input type="radio" name="smoker" value="yes"> Yes <input type="radio" name="smoker" value="no"> No
+			<br>
+			<label>Any pets?</label><br>
+			<label><input type="checkbox" name="pet" value="cat"> Cat(s)</label><br>
+			<label><input type="checkbox" name="pet" value="dog"> Dog(s)</label><br>
+			<label><input type="checkbox" name="pet" value="other"> Other </label>
+			<label>Specify: </label>
+			<label><input type="text" name="other"><br>
+			<label><input type="checkbox" name="pet" value="nopet"> No Pets</label>
+		</fieldset>
+		<fieldset>
+			<legend>What are you looking for?</legend>
+			<label>Size of apartement:</label>
+			<br>
+			<label><input type="checkbox" name="size" value="studio"> Studio</label>
+			<label><input type="checkbox" name="size" value="31/2"> 3&frac12;</label>
+			<label><input type="checkbox" name="size" value="41/2"> 4&frac12;</label>
+			<label><input type="checkbox" name="size" value="51/2"> 5&frac12;</label>
+			<label><input type="checkbox" name="size" value="+51/2"> More than 5&frac12;</label><br>
+			<br>
+			<label>Do you have preferred locations?</label><br>
+			<label><input type="checkbox" name="location" value="west_island"> West Island</label>
+			<label><input type="checkbox" name="location" value="downtown"> Downtown</label>
+			<label><input type="checkbox" name="location" value="lower_westmount"> Lower Westmount</label>
+			<label><input type="checkbox" name="location" value="ndg"> NDG</label>
+			<label><input type="checkbox" name="location" value="east_end_of_island"> East end of Island</label>
+			<label><input type="checkbox" name="location" value="dont_care"> Don't care<br></label>
+			<br>
+			<label>Price Range/month:</label><br>
+			<select>
+				<option value="300-399">$300-$399</option>
+				<option value="400-499">$400-$499</option>
+				<option value="500-599">$500-$599</option>
+				<option value="no_limit">No price limit</option>
+			</select><br>
+			<br>
+			<label>I want to have</label><br>
+			<label><input type="checkbox" name="service" value="indoor_parking"> Indoor Parking</label>
+			<label><input type="checkbox" name="service" value="outdoor_parking"> Outdoor Parking</label>
+			<label><input type="checkbox" name="service" value="balcony"> Balcony</label>
+			<label><input type="checkbox" name="service" value="piscine"> Piscine</label>
+			<label><input type="checkbox" name="service" value="laundromat_in_building"> Laundromat in building</label>
+		</fieldset>
+		<br>
+		Search the area<br>
+		<input type="submit" value="Search">
+		<input type="reset" value="Start over">
+	</form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+/*// ------------------------------------------------------------------------------
+// Assignment #2
+// Written by: Anaël Akouété-Akue 40010999
+// For SOEN 287 Section S – Winter 2018
+// -----------------------------------------------------------------------------*/
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+#table{
+	margin: 20px;
+}
+
+#row1{
+	background-color: #4889f2;
+}
+
+#row3{
+	background-color: #4889f2;
+}
+
+#c2r1{
+	padding: 2px 50px 2px 2px;
+}
+

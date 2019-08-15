@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- By Anaël Akouété-Akue
+	 For SOEN 287-assignment 1 -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Assignment 1 - Question 4</title>
+	<style>
+		body{
+			background-color: #80dd75;
+		}
+		label.bolder{
+			font-weight: bold;
+		}
+		#fieldset1{
+			border-color: #7a0396;
+			background-color: #a7a4f2;
+		}
+		#legend1{
+			color: #7a0396;
+			font-weight: bold;
+		}
+		#fieldset2{
+			border-color: #82000d;
+			background-color: #f9898b;
+		}
+		#legend2{
+			color: #82000d;
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body>
+	<table>
+		<td><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Affine_Analytics_Logo.png/205px-Affine_Analytics_Logo.png"><img src="images/Affine_Analytics.png"></a></td>
+		<td><h1>Anaël Akouété-Akue's Search Form</h1></td>
+	</table>
+	<form action="">
+		<fieldset id="fieldset1">
+			<legend id="legend1">Renter's Information</legend>
+			<label class="bolder">How many people will live in the apartment?</label>
+			<input type="number" name="people" min="1"><br>
+			<br>
+			<label class="bolder">Smoker?</label>
+			<input type="radio" name="smoker" value="yes"> Yes <input type="radio" name="smoker" value="no"> No
+			<br>
+			<label class="bolder">Any pets?</label><br>
+			<label><input type="checkbox" name="pet" value="cat"> Cat(s)</label><br>
+			<label><input type="checkbox" name="pet" value="dog"> Dog(s)</label><br>
+			<label><input type="checkbox" name="pet" value="other"> Other </label>
+			<label class="bolder">Specify: </label>
+			<label><input type="text" name="other"><br>
+			<label><input type="checkbox" name="pet" value="nopet"> No Pets</label>
+		</fieldset>
+		<fieldset id="fieldset2">
+			<legend id="legend2">What are you looking for?</legend>
+			<label class="bolder">Size of apartement:</label>
+			<br>
+			<label><input type="checkbox" name="size" value="studio"> Studio</label>
+			<label><input type="checkbox" name="size" value="31/2"> 3&frac12;</label>
+			<label><input type="checkbox" name="size" value="41/2"> 4&frac12;</label>
+			<label><input type="checkbox" name="size" value="51/2"> 5&frac12;</label>
+			<label><input type="checkbox" name="size" value="+51/2"> More than 5&frac12;</label><br>
+			<br>
+			<label class="bolder">Do you have preferred locations?</label><br>
+			<label><input type="checkbox" name="location" value="west_island"> West Island</label>
+			<label><input type="checkbox" name="location" value="downtown"> Downtown</label>
+			<label><input type="checkbox" name="location" value="lower_westmount"> Lower Westmount</label>
+			<label><input type="checkbox" name="location" value="ndg"> NDG</label>
+			<label><input type="checkbox" name="location" value="east_end_of_island"> East end of Island</label>
+			<label><input type="checkbox" name="location" value="dont_care"> Don't care<br></label>
+			<br>
+			<label class="bolder">Price Range/month:</label><br>
+			<select>
+				<option value="300-399">$300-$399</option>
+				<option value="400-499">$400-$499</option>
+				<option value="500-599">$500-$599</option>
+				<option value="no_limit">No price limit</option>
+			</select><br>
+			<br>
+			<label class="bolder">I want to have</label><br>
+			<label><input type="checkbox" name="service" value="indoor_parking"> Indoor Parking</label>
+			<label><input type="checkbox" name="service" value="outdoor_parking"> Outdoor Parking</label>
+			<label><input type="checkbox" name="service" value="balcony"> Balcony</label>
+			<label><input type="checkbox" name="service" value="piscine"> Piscine</label>
+			<label><input type="checkbox" name="service" value="laundromat_in_building"> Laundromat in building</label>
+		</fieldset>
+		<br>
+		Search the area<br>
+		<input type="submit" value="Search">
+		<input type="reset" value="Start over">
+	</form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+body{
+	background-image: url(images/elephant.jpg);
+}
+p{
+	font-weight: bold;
+	color: #ffffff;
+}
+#header_box{
+	border: 10px solid white;
+	margin: 20px;
+	padding: 10px;
+	width: 30%;
+}
+#header_text{
+	color: white;
+}
+#table{
+	border: 15px dotted #800000;
+	margin: 20px;
+}
+#table_header th{
+	padding: 10px;
+	background-color: #FF00FF;
+}
+#cell_1{
+	border: 5px solid #0000FF;
+	background-color: #00FFFF;
+}
+#cell_2{
+	border: 5px solid #008000;
+	background-color: #00FF00;
+}
+#cell_3{
+	border: 5px solid #808080;
+	background-color: #C0C0C0;
+}
+#cell_4{
+	border: 5px solid #808000;
+	background-color: #FFFF00;
+}
+ol#armenian_list{
+	list-style-type: armenian;
+}

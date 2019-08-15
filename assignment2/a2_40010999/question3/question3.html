@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- //
+// Assignment #2
+// Written by: Anaël Akouété-Akue
+// For SOEN 287 Section S – Winter 2018
+// -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Assignment 2 - Question 3</title>
+	<link rel="stylesheet" type="text/css" href="question3.css">
+	<script>
+		//You can easily use numbers in x 
+		var x = "aabccddddeeffb".split("");
+				
+		var histElements = 
+		{
+			x: x,
+			type: 'histogram',
+			marker: {color: '#FFC300',},
+		};
+				
+		var layout = 
+		{
+			bargap: 0.05, 
+			bargroupgap: 0.5, 
+			barmode: "overlay", 
+			title: "Histogram", 
+			xaxis: {title: "Values",}, 
+			yaxis: {title: "Count"},			  
+		};
+					
+		var data = [histElements];
+				
+		//Using ID for div to plot the graph
+		Plotly.newPlot('graph', data, layout);
+    </script>
+</head>
+
+<body>
+	<table id="table">
+		<tr id="row1">
+			<td id="c1r1">Input string:</td>
+			<td id="c2r1"><input type="text" id="strIn"></td>
+		</tr>
+		<tr id="row2">
+			<td id="c1r2">Input word:</td>
+			<td id="c2r2"><input type="text" id="wordIn"></td>
+		</tr>
+		<tr>
+			<td id="row3" colspan="2"><input type="button" value="Plot histogram"></td>
+		</tr>
+	</table>
+
+</body>
+</html>
